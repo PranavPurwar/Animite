@@ -21,37 +21,6 @@ jobs:
 
       - name: Build App
         run: ./gradlew assembleRelease
-        
-
-name: build-debug
-
-on:
-
-  push:
-
-jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-java@v3
-
-        with:
-
-          distribution: 'adopt'
-
-          java-version: 11
-
-          cache: 'gradle'
-
-      - name: Assemble Debug
-
-        run: ./gradlew assembleDebug
 
       - name: Upload APK
 
