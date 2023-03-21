@@ -3,8 +3,6 @@ name: create-release
 
 on:
   push:
-    tags:
-      - v*
   workflow_dispatch:
 
 jobs:
@@ -15,7 +13,7 @@ jobs:
 
       - uses: actions/setup-java@v3
         with:
-          distribution: 'adopt'
+          distribution: 'temurin'
           java-version: 11
           cache: 'gradle'
 
