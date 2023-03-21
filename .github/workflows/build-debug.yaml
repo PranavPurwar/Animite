@@ -3,8 +3,8 @@ name: build-debug
 
 on:
   push:
-    branches:
-      - 'main'
+
+
 
 jobs:
   build:
